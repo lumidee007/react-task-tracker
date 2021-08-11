@@ -16,8 +16,7 @@ import styled from 'styled-components';
     justify-content: space-between;
   `
 
-  export const TaskPara = styled.span`
-    
+  export const TaskPara = styled.p`
 `
     
   
