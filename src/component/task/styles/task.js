@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 
  export const TaskContainer = styled.div`
+        border-left: ${({reminder}) => reminder ? "5px solid green" : ""};
         background: #f4f4f4;
         margin: 5px;
         padding: 10px 20px;
@@ -15,7 +16,8 @@ import styled from 'styled-components';
     justify-content: space-between;
   `
 
-  export const TaskPara = styled.p`
+  export const TaskPara = styled.span`
+    
 `
     
   
