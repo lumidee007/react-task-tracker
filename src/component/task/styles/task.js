@@ -6,7 +6,10 @@ import styled from 'styled-components';
         background: #f4f4f4;
         margin: 5px;
         padding: 10px 20px;
-        cursor: pointer;
+        
+        &:hover {
+          cursor: pointer;
+        }
  `
    
   

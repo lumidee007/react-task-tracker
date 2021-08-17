@@ -1,4 +1,4 @@
-import { Header, Tasks } from './component'
+import { Header, Tasks, AddTask } from './component'
 import {useState} from 'react'
 
 
@@ -37,6 +37,10 @@ const toggleReminder = (id) => {
   setTasks(tasks.map(task => task.id === id ? {...task, reminder: !task.reminder }: task))
 }
 
+const addTask = (task) => {
+  console.log(task)
+}
+
 
 const style = {
   textAlign: 'center',
@@ -48,7 +52,8 @@ const style = {
   return (
     <div className='container'>
       <Header />
-      {tasks.length > 0 ? <Tasks tasks={tasks} delTask={delTask} toggleReminder={toggleReminder}/> : <h3 style={style}>NO TASKS AVAILABLE</h3>}
+      <AddTask />
+      {tasks.length > 0 ? <Tasks tasks={tasks} delTask={delTask} toggleReminder={toggleReminder}/> : <h3 style={style}>NO TASK AVAILABLE</h3>}
     </div>
   );
 }
