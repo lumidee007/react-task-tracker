@@ -9,7 +9,7 @@ function App() {
     {
         id: 1,
         text: 'Doctors Appointment',
-        day: 'Feb 6th at 5:20pm',
+        day: 'Dec 6th 2021 at 2:20pm',
         reminder: true
     },
     {
