@@ -4,6 +4,7 @@ import {useState} from 'react'
 
 function App() {
 
+  const [showAdd, setShowAdd] = useState(false)
   const [tasks, setTasks] = useState([
     {
         id: 1,
@@ -38,7 +39,14 @@ const toggleReminder = (id) => {
 }
 
 const addTask = (task) => {
-  console.log(task)
+  let id = tasks.length + 1;
+  console.log(id)
+  let newTask = { id, ...task }
+  setTasks([...tasks, newTask])
+}
+
+const showTask = () => {
+  setShowAdd(!showAdd)
 }
 
 
@@ -51,8 +59,8 @@ const style = {
 
   return (
     <div className='container'>
-      <Header />
-      <AddTask />
+      <Header showTask={showTask} showAdd={showAdd}/>
+      {showAdd && <AddTask addTask={addTask} />}
       {tasks.length > 0 ? <Tasks tasks={tasks} delTask={delTask} toggleReminder={toggleReminder}/> : <h3 style={style}>NO TASK AVAILABLE</h3>}
     </div>
   );

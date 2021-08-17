@@ -5,4 +5,15 @@ export const Container= styled.div `
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    margin-left: 6px;
+    margin-right: -6px;
+`
+
+
+
+export const MainHeader= styled.h1 `
+
+ &:hover {
+    color: green; 
+  }
 `

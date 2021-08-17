@@ -1,16 +1,17 @@
 import styled from 'styled-components'
 
 export const Form = styled.form`
-
  margin-bottom: 40px;
 `
 
 export const FormContainer = styled.div`
+max-width: 500px;
 margin: 20px 0;
 `
 
 export const FormLabel = styled.label`
 display: block;
+margin-left:5px;
 `
 
 export const FormInput = styled.input`
@@ -19,6 +20,12 @@ height: 40px;
 margin: 5px;
 padding: 3px 7px;
 font-size: 17px;
+`
+
+export const FormInputReminder = styled.input`
+ width: 15px;
+ height: 15px;
+ border-radius: 5px;
 `
 
 export const FormReminder = styled(FormContainer)`
