@@ -24,20 +24,20 @@ export default function AddTask({ addTask }) {
         <Form onSubmit={onSubmit}>
             <FormContainer>
               <FormLabel>Task</FormLabel>
-              <FormInput type='text' placeholder='Add' value={text} onChange={e => setText(e.target.value)}/>
+              <FormInput type='text' placeholder='Add task' value={text} onChange={e => setText(e.target.value)}/>
             </FormContainer>
 
             <FormContainer>
               <FormLabel>Day and Time</FormLabel>
-              <FormInput type='text' placeholder='AddDayTime' value={day} onChange={e => setDayTime(e.target.value)}/>
+              <FormInput type='text' placeholder='Add day & time' value={day} onChange={e => setDayTime(e.target.value)}/>
             </FormContainer>
 
             <FormReminder>
               <FormLabel>Set Reminder</FormLabel>
-              <FormInputReminder type='checkbox' checked={reminder} placeholder='Add Day_Time' value={reminder} onChange={e => setReminder(e.currentTarget.checked)}/>
+              <FormInputReminder type='checkbox' checked={reminder} value={reminder} onChange={e => setReminder(e.currentTarget.checked)}/>
             </FormReminder>
             
-            <FormSummit type='submit' value='Save Task'/>
+            <FormSummit type='submit' value='Add Task'/>
         </Form>
     )
 }

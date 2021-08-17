@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components'
 
 export const Container= styled.div `
     display: flex;
@@ -9,11 +9,18 @@ export const Container= styled.div `
     margin-right: -6px;
 `
 
-
+const fadeIn = keyframes`
+0% {
+    opacity: 0;
+    color: red;
+}
+100% {
+    opacity: 1;
+    color: cream;
+}
+`
 
 export const MainHeader= styled.h1 `
-
- &:hover {
-    color: green; 
-  }
+animation: 5s ${fadeIn} ease-in-out;
+color: green; 
 `

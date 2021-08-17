@@ -1,5 +1,5 @@
 import { Container, MainHeader } from "./styles/header"
-import { Button,  } from '../index'
+import { Button } from '../index'
 
 
 export default function Header({title, showTask, showAdd }) {

@@ -20,6 +20,7 @@ height: 40px;
 margin: 5px;
 padding: 3px 7px;
 font-size: 17px;
+border-radius: 7px;
 `
 
 export const FormInputReminder = styled.input`

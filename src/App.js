@@ -34,13 +34,11 @@ const delTask = (id) => {
 
 //Manage Reminder
 const toggleReminder = (id) => {
-  console.log('reminder effect on point')
   setTasks(tasks.map(task => task.id === id ? {...task, reminder: !task.reminder }: task))
 }
 
 const addTask = (task) => {
   let id = tasks.length + 1;
-  console.log(id)
   let newTask = { id, ...task }
   setTasks([...tasks, newTask])
 }
@@ -54,7 +52,7 @@ const style = {
   textAlign: 'center',
   marginTop: "80px",
   color: "green",
-  fontWeight: 'bold'
+  fontWeight: 900,
 }
 
   return (

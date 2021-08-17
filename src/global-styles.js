@@ -15,11 +15,12 @@ export const GlobalStyles = createGlobalStyle`
     margin: 30px auto;
     overflow: auto;
     min-height: 300px;
-    border: 1px solid rgb(70, 96, 180);
+    font-family: "Trirong", serif;
     padding: 30px;
     border-radius: 5px;
     background-color: rgba(241, 237, 237, 0.815);
     background-color: darkorange;
+    box-shadow: 2px 3px 9px 3px rgba(33,108,6,0.78);
   }
 
 `
