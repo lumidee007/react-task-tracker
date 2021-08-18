@@ -21,15 +21,31 @@ const delTask = async (id) => {
   setTasks(updatedTask)
 }
 
-//Manage Reminder
-const toggleReminder = (id) => {
-  setTasks(tasks.map(task => task.id === id ? {...task, reminder: !task.reminder }: task))
+// Manage Reminder
+const toggleReminder = async (id) => {
+  const res = await fetch(`http://localhost:7000/tasks/${id}`)
+  const data = await res.json()
+  const updatedData = {...data, reminder: !data.reminder}
+  const newRes = await fetch(`http://localhost:7000/tasks/${id}`, {
+    method: 'PUT',
+    headers: {"Content-type": "application/json"},
+    body: JSON.stringify(updatedData)
+  })
+  const newData = await newRes.json()
+
+  setTasks(tasks.map(task => task.id === id ? {...task, reminder: newData.reminder }: task))
 }
 
-const addTask = (task) => {
-  let id = tasks.length + 1;
-  let newTask = { id, ...task }
-  setTasks([...tasks, newTask])
+
+// Add New Task
+const addTask = async (task) => {
+  const res = await fetch('http://localhost:7000/tasks', {
+    method: 'POST',
+    headers: {"Content-type": "application/json"},
+    body: JSON.stringify(task)
+  })
+  const data = await res.json()
+  setTasks([...tasks, data])
 }
 
 const showTask = () => {
