@@ -57,6 +57,7 @@ export const FormSummit = styled.input`
 
   &:hover {
     transform: scale(0.98);
+    background-color: green;
   }
 `
 

@@ -3,14 +3,20 @@
     {
       "text": "Doctors Appointment",
       "day": "6th December 2021 at 4:00pm",
-      "reminder": true,
+      "reminder": false,
       "id": 1
     },
     {
       "text": "Visit Tunde Ojo ",
       "day": "7th Sept 2021 at 3pm",
-      "reminder": false,
+      "reminder": true,
       "id": 2
+    },
+    {
+      "text": "Daily Network Summary",
+      "day": "18th August 2021 at 10am",
+      "reminder": true,
+      "id": 3
     }
   ]
 }

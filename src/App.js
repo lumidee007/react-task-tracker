@@ -1,5 +1,7 @@
-import { Header, Tasks, AddTask } from './component'
+
 import {useState, useEffect} from 'react'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { Header, Tasks, AddTask, Footer, About } from './component'
 
 
 function App() {
@@ -61,11 +63,20 @@ const style = {
 }
 
   return (
-    <div className='container'>
-      <Header showTask={showTask} showAdd={showAdd}/>
-      {showAdd && <AddTask addTask={addTask} />}
-      {tasks.length > 0 ? <Tasks tasks={tasks} delTask={delTask} toggleReminder={toggleReminder}/> : <h3 style={style}>NO TASK AVAILABLE</h3>}
-    </div>
+    <Router>
+      <div className='container'>
+          <Header showTask={showTask} showAdd={showAdd}/>
+          <Route path='/' exact>
+          {showAdd && <AddTask addTask={addTask} />}
+          {tasks.length > 0 ? <Tasks tasks={tasks} delTask={delTask} toggleReminder={toggleReminder}/> : <h3 style={style}>NO TASK AVAILABLE</h3>}
+          </Route>
+          <Route path='/about'>
+            <About />
+          </Route>
+          <Footer />
+      </div>
+    </Router>
+    
   );
 }
 
