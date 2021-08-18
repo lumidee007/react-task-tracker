@@ -9,13 +9,13 @@
     {
       "text": "Visit Tunde Ojo ",
       "day": "7th Sept 2021 at 3pm",
-      "reminder": true,
+      "reminder": false,
       "id": 2
     },
     {
       "text": "Daily Network Summary",
       "day": "18th August 2021 at 10am",
-      "reminder": true,
+      "reminder": false,
       "id": 3
     }
   ]
