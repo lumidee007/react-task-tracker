@@ -67,11 +67,11 @@ const style = {
       <div className='container'>
           <Header showTask={showTask} showAdd={showAdd}/>
           <Route path='/' exact>
-          {showAdd && <AddTask addTask={addTask} />}
-          {tasks.length > 0 ? <Tasks tasks={tasks} delTask={delTask} toggleReminder={toggleReminder}/> : <h3 style={style}>NO TASK AVAILABLE</h3>}
-          </Route>
-          <Route path='/about'>
-            <About />
+              {showAdd && <AddTask addTask={addTask} />}
+              {tasks.length > 0 ? <Tasks tasks={tasks} delTask={delTask} toggleReminder={toggleReminder}/> : <h3 style={style}>NO TASK AVAILABLE</h3>}
+            </Route>
+            <Route path='/about'>
+              <About />
           </Route>
           <Footer />
       </div>

@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <FooterContainer>
             <p>Copyright &copy; 2021</p>
-            <Link to='/about'>About</Link>
+            <Link to='/about' className="about">About</Link>
         </FooterContainer>
     )
 }
