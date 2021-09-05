@@ -1,5 +1,5 @@
 # REACT TASK TRACKER APP
-This is a task tracker using react. This application allow you to fetch, add, update and delete task using a json server. http://localhost:7000/tasks.
+This is a task tracker using react. This application allow you to add and delete a task.
 
 ## Starting the application
 npm run start to start the react development server and,
