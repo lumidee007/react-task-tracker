@@ -3,14 +3,16 @@ import {useLocation} from 'react-router-dom'
 import { Button } from '../index'
 
 
-export default function Header({title, showTask, showAdd }) {
-
-    const location = useLocation()
+export default function Header({title, showTask, showAdd}) {
 
     return (
         <Container>
            <MainHeader> {title} </MainHeader> 
-           {location.pathname === '/' && <Button text={showAdd ? "Close": "Add"} color={showAdd ? "red": 'green'} onClick={showTask}/>}
+               <Button 
+               text={showAdd ? "Close": "Add"} 
+               color={showAdd ? "red": 'green'} 
+               onClick={showTask} 
+               />        
         </Container>
     )
 }

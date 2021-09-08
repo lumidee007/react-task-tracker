@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const Container= styled.div `
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
+    outline: none;
     margin-bottom: 20px;
 `

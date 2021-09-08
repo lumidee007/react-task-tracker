@@ -9,7 +9,6 @@ import styled from 'styled-components';
         padding: 10px 20px;
         box-shadow: 1px 2px 2px 0px rgba(124,207,23,0.75);
         border-radius: 5px;
-        
         &:hover {
           cursor: pointer;
         }

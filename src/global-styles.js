@@ -6,8 +6,6 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: background-color: rgba(241, 237, 237, 0.815);
-  
   }
   
   .container {
