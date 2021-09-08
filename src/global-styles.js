@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
     overflow: auto;
     min-height: 300px;
     font-family: "Trirong", serif;
-    padding: 30px;
+    padding: 31px;
     border-radius: 5px;
     background-color: rgba(241, 237, 237, 0.815);
     background-color: darkorange;
